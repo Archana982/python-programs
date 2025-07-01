@@ -1,0 +1,29 @@
+class Calculator
+   def__init__(self,a,b,operation):
+      self.a=a
+      self.b=b
+      self.operation=operation.lower()
+
+  def calculate(self):
+    if self.operation=="add":
+       return self.a + self.b
+    elif self.operation=="subtract":
+       return self.a-self.b
+    elif self.operation=="multiply":
+       return self.a*self.b
+    elif self.operation=="divide":
+       if self.b !=0:
+           return self.a/self.b
+       else:
+          return "Error:Division by zer is not allowed."
+    else:
+      return "Error:Invalid operation entered."
+
+    num1=10.0
+    num2=2.0
+    operation= "divide"
+
+    calc = Calculator(num1,num2,operation)
+    result calc.calculate()
+    print("Result:",result)
+           
