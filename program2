@@ -1,0 +1,17 @@
+def generate_odd_series(a):
+  number=1
+  count=1
+  result=[]
+    while count<a:
+    result.append(number)
+    number +=2
+    count +=1
+    
+  return result
+ 
+a= int(input("enter the value of a:"))
+ 
+output= generate_odd_series(a)
+ 
+print("Output:",",".join(map(str,output)))
+  
